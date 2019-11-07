@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-LABEL maintainer="bazzzabala77@gmail.com"
+LABEL maintainer="rheagezelle@gmail.com"
 
 # Install apache, PHP, and supplimentary programs. curl, and lynx-cur are for debugging the container.
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive
