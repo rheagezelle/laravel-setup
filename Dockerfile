@@ -5,9 +5,6 @@ LABEL maintainer="rheagezelle@gmail.com"
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive
 RUN apt-get -y install imagemagick
 RUN apt-get -y install vim apache2 php libapache2-mod-php php-mcrypt php-curl php-cli php-common php-json php-mysql php-readline php-mbstring php-xml php-imagick php-zip curl php-intl lynx-cur php-soap poppler-utils php-bcmath php-gd
-RUN apt-get install -y zip libzip-dev \
-  && docker-php-ext-configure zip --with-libzip \
-  && docker-php-ext-install zip
 
 # Enable apache mods.
 RUN a2enmod php7.0
